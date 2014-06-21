@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <com.congvc.ntpclock.view.MyAnalogClock  
+        android:id="@+id/analogClock"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"/>
+   
+    <LinearLayout
+        android:id="@+id/lnSyncManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp" >
+    
+	     <TextView
+	        android:id="@+id/tvSyncManualLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sync_manual"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	         />
+	     
+	      <Button
+	        android:id="@+id/btnSyncManual"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sync"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	         />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/lnSyncAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/lnSyncManual"
+        android:orientation="horizontal"
+         android:gravity="center_vertical"
+         android:layout_marginBottom="10dp">
+    
+	     <TextView
+	        android:id="@+id/tvSyncAutoLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sync_auto"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	         />
+	     
+	       <TextView
+	        android:id="@+id/tvCountDownTimer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/time_def_countdown"
+	        android:textSize="30sp"
+	        android:textStyle="bold"
+	         />
+	</LinearLayout>
+</RelativeLayout>
